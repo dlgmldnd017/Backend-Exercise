@@ -1,0 +1,61 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.2.1'
+    id 'io.spring.dependency-management' version '1.1.4'
+}
+
+group = 'com.ssafy'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    sourceCompatibility = '17'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    /* mariadb */
+    runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
+
+    /* spring jpa data */
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    /* spring security */
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+
+    /* spring boot */
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    /* lombok */
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    /* jwt */
+    implementation 'io.jsonwebtoken:jjwt-api:0.12.3'
+    implementation 'io.jsonwebtoken:jjwt-impl:0.12.3'
+    implementation 'io.jsonwebtoken:jjwt-jackson:0.12.3'
+
+    /* swagger-ui */
+    implementation group: 'org.springdoc', name: 'springdoc-openapi-starter-webmvc-ui', version: '2.1.0'
+
+    /* dev auto */
+    implementation 'org.springframework.boot:spring-boot-devtools'
+    annotationProcessor 'org.springframework.boot:spring-boot-devtools'
+
+    /* websocket */
+    implementation 'org.springframework.boot:spring-boot-starter-websocket'
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+
+    /* stomp-websocket */
+    implementation group: 'org.webjars', name: 'stomp-websocket', version: '2.3.3-1'
+
+    /* Redis */
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
