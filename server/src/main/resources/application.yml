@@ -9,9 +9,9 @@ spring:
     # org.mariadb.jdbc.Driver
     # com.mysql.cj.jdbc.Driver
     driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://localhost:3306/demo?serverTimeZone=UTC&CharacterEncoding=UTF-8
-    username: root
-    password: ssafy
+    url: ENC(bRfuF3Znt1SnimixwpfKp8lUXaTl9HyyjwrZpqxmD5I9tsIS73PbiYAd2p5Xu0vFjIzrAcdKhwqQrvWpXPo9TXFB6bO/8NYlflMza3ymQFV6YPJWzcPc6g==)
+    username: ENC(Txf4MwWVQ2tJBiecIhaYWw==)
+    password: ENC(Nvzs93v8dGSBctFdYOA8iA==)
     hikari:
       maximum-pool-size: 10
       connection-timeout: 5000
@@ -29,7 +29,7 @@ spring:
   # jpa
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: create
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 
@@ -37,6 +37,6 @@ spring:
     defer-datasource-initialization: true
 
   jwt:
-    secret: spring.jwt.secret=ieofs983289qa98we9ufs/
+    secret: ENC(e1zXtOxodEDLDkWjqtwR/OibgDLT+GlirrMHhwkNIAJOC0I/09XPk5TS6GjmyU76)
 #springdoc:
 #  show-login-endpoint: true
