@@ -8,8 +8,8 @@ spring:
   datasource:
     # org.mariadb.jdbc.Driver
     # com.mysql.cj.jdbc.Driver
-    driver-class-name: org.mariadb.jdbc.Driver
-    url: ENC(bRfuF3Znt1SnimixwpfKp8lUXaTl9HyyjwrZpqxmD5I9tsIS73PbiYAd2p5Xu0vFjIzrAcdKhwqQrvWpXPo9TXFB6bO/8NYlflMza3ymQFV6YPJWzcPc6g==)
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ENC(0uTj2vYBjNsX4Fxc3mmTmAWgo0g6+cpqjC1VOWkBMY4KMkJ3H5aRBfbNxiqApxSt7sgIiAHuHgnBOsKRx79dzfvcXH89Iz7HbAVCybVyljuRjHWVUEya6g==)
     username: ENC(Txf4MwWVQ2tJBiecIhaYWw==)
     password: ENC(Nvzs93v8dGSBctFdYOA8iA==)
     hikari:
