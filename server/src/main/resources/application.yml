@@ -1,10 +1,4 @@
 spring:
-  url: "http://localhost:80"
-
-  server:
-    port: 90
-    # address: 192.168.100.184
-
   datasource:
     # org.mariadb.jdbc.Driver
     # com.mysql.cj.jdbc.Driver
@@ -38,5 +32,8 @@ spring:
 
   jwt:
     secret: ENC(e1zXtOxodEDLDkWjqtwR/OibgDLT+GlirrMHhwkNIAJOC0I/09XPk5TS6GjmyU76)
-#springdoc:
-#  show-login-endpoint: true
+  #springdoc:
+  #  show-login-endpoint: true
+
+server:
+  port: 80
