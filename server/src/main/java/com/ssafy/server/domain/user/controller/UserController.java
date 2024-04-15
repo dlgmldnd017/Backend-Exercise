@@ -1,10 +1,9 @@
 package com.ssafy.server.domain.user.controller;
 
-import com.ssafy.server.domain.login.dto.LoginDto;
 import com.ssafy.server.domain.user.dto.ProfileDto;
 import com.ssafy.server.domain.user.entity.User;
 import com.ssafy.server.domain.user.service.UserService;
-import com.ssafy.server.global.security.util.JWTUtil;
+import com.ssafy.server.global.jwt.util.JWTUtil;
 import jakarta.servlet.http.HttpServletRequest;
 
 import java.util.HashMap;

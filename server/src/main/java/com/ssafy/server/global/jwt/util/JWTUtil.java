@@ -1,4 +1,4 @@
-package com.ssafy.server.global.security.util;
+package com.ssafy.server.global.jwt.util;
 
 import com.ssafy.server.domain.user.entity.User;
 import com.ssafy.server.domain.user.repository.UserRepository;

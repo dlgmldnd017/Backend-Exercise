@@ -1,0 +1,69 @@
+spring:
+  # database
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ENC(69SJAt794b1K5jLzkRM/j55lfoqXX4QG3YlHx/VFoItsV0GOupGKa836N+c2lNI9yZq1x2fGJmRVzFAKggVrf1K+FQ6hSQNvsgtku7RpFcUcnrdg3VsRvpSSuC0veURQ9EA/v0ApVgg=)
+    username: ENC(/t8DkSF5mrAdnOPnhgZnRg==)
+    password: ENC(GeFGi9XWT9+9MzNytbwUMQ==)
+
+    # hikari
+    hikari:
+      maximum-pool-size: 10
+      connection-timeout: 5000
+      connection-init-sql: SELECT 1
+      validation-timeout: 2000
+      minimum-idle: 10
+      idle-timeout: 600000
+      max-lifetime: 1800000
+
+  # redis
+  data:
+    redis:
+      host: ENC(9Z0zcU80N19aobnlphIuXQi6sQvIKezY0pbxXX374LQ=)
+      port: ENC(ltEqkAL4IJ/ZDrZldef4Ow==)
+
+  # jpa
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: Asia/Seoul
+        format_sql: true
+        show_sql: true;
+    open-in-view: false
+
+  # jwt
+  jwt:
+    secret: ENC(wz2RqYjAi6zLjPaHCcQ2biu5+KkfwK/I9iHasFRPEZSYmF4IUVgfu++mOUBsnX7ptDgbrji35VM=)
+
+  # log
+  logging.level:
+    org.hibernate.SQL: debug
+
+# Spring 문서
+springdoc:
+
+  # 스웨거
+  swagger-ui:
+
+    # Model 정렬 (내림차순)
+    groups-order: DESC
+
+# 서버 주소 설정
+server:
+  url: ENC(OvgmgVVHaVLzzoH6sMB6+VyLwXwwK6pamPK71ZSc5not5/kqOZ+9JEP1UhT2/wg9)
+  port: ENC(G0gAOlAvD10AZO2Jgpu0PQ==)
+
+  # ssl
+  ssl:
+    enabled: false
+
+  #서버 앤드포인트 설정
+  servlet:
+    context-path: ENC(Su/TdiXpuuVbc1uVduEWfA==)
+
+naver:
+  clientId: ENC(Qkynxln7BCTnObDVh437Xbl/LRAHPLSS)
+  clientSecret: ENC(AER17U9IP0AEaK4LsoQ3ovADl3GPXraXOo7h0gGqBlDYeEqLCDR2kf+BbACZ2seVMF/vzuCI+7w=)

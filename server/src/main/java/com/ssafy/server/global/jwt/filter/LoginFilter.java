@@ -1,4 +1,4 @@
-package com.ssafy.server.global.filter;
+package com.ssafy.server.global.jwt.filter;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.ssafy.server.domain.login.dto.LoginDto;
@@ -7,7 +7,7 @@ import com.ssafy.server.global.redis.repository.RefreshTokenRepository;
 import com.ssafy.server.global.redis.service.RedisService;
 import com.ssafy.server.global.response.Response;
 import com.ssafy.server.global.security.dto.TokenDTO;
-import com.ssafy.server.global.security.util.JWTUtil;
+import com.ssafy.server.global.jwt.util.JWTUtil;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

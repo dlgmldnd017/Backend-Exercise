@@ -5,7 +5,7 @@ import com.ssafy.server.domain.login.dto.LoginDto;
 import com.ssafy.server.domain.user.dto.ProfileDto;
 import com.ssafy.server.domain.user.entity.User;
 import com.ssafy.server.domain.user.repository.UserRepository;
-import com.ssafy.server.global.security.util.JWTUtil;
+import com.ssafy.server.global.jwt.util.JWTUtil;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 

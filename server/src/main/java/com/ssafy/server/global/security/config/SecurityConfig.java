@@ -2,10 +2,10 @@ package com.ssafy.server.global.security.config;
 
 
 import com.ssafy.server.global.redis.repository.RefreshTokenRepository;
-import com.ssafy.server.global.filter.JWTFilter;
-import com.ssafy.server.global.filter.LoginFilter;
+import com.ssafy.server.global.jwt.filter.JWTFilter;
+import com.ssafy.server.global.jwt.filter.LoginFilter;
 import com.ssafy.server.global.redis.service.RedisService;
-import com.ssafy.server.global.security.util.JWTUtil;
+import com.ssafy.server.global.jwt.util.JWTUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
